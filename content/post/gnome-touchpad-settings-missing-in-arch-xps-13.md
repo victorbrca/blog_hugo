@@ -3,6 +3,7 @@ title: "Gnome Touchpad Settings Missing in Arch Xps 13"
 date: 2017-09-23T22:47:40-04:00
 draft: false
 author: "Victor Mendonça"
+description: "Solution for fixing an issue were the Gnome touchpad settings disappear."
 tags: ["Linux", "Arch", "Hardware"]
 ---
 

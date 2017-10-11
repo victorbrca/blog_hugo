@@ -3,6 +3,7 @@ title = "Additional Status for Vim With Powerline"
 date = 2017-09-20T13:26:46-04:00
 draft = false
 author = "Victor Mendonça"
+description = "Displaying additional information on Vim's status bar using PowerLine."
 tags = ["vim", "bash", "Linux"]
 +++
 

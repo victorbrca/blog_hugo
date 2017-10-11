@@ -3,6 +3,7 @@ title: "Atom as Markdown Editor"
 date: 2017-09-24T22:46:02-04:00
 draft: false
 author: "Victor Mendonça"
+description: "Using Atom as a Markdown editor."
 tags: ["Markdown"]
 ---
 

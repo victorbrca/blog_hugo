@@ -3,6 +3,7 @@ title: "How to View DNS Calls Made by Processes"
 date: 2017-10-06T18:46:20-04:00
 draft: false
 author: "Victor Mendonça"
+description: "Quick instructions on how to capture application DNS requests on Linux."
 tags: ["Linux", "Network"]
 ---
 

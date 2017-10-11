@@ -3,7 +3,7 @@ title: "Bash Special Parameters"
 date: 2017-09-26T22:46:27-04:00
 draft: false
 author: "Victor Mendonça"
-description: "Quick definition of Bash's special parameters"
+description: "Quick definition of Bash's special parameters."
 tags: ["Bash", "Linux"]
 ---
 
