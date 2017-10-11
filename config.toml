@@ -142,11 +142,18 @@ copyright = "(c) 2016 Copyright my blog"
 title = "Victor's Blog" # Site title
 
 [[Languages.en.menu.main]]
-name = "Blog"
+name = "Home"
 pre = ""
 weight = 1
 identifier = "post"
 url = "https://victorbrca.github.io/blog/"
+
+[[Languages.en.menu.main]]
+name = "About 2"
+pre = ""
+weight = 2
+identifier = "about"
+url = "https://victorbrca.github.io/about/"
 
 [[Languages.en.menu.main]]
 name = "Professional"
