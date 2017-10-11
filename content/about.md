@@ -5,11 +5,6 @@ title = "About"
 author = "author"
 draft = false
 type = "page"
-[menu]
-     [menu.main]
-        name = ""
-        weight = 2
-        identifier = "about"
 +++
 
 <img style="float: left; "padding-right: 5px;" src="/img/profile.jpg" hspace="20" height="250" width="250">

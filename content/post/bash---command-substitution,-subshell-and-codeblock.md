@@ -1,13 +1,11 @@
 ---
 title: "Bash - Command Substitution, Subshell and Codeblock"
-date: 2017-01-11T01:38:41-04:00
+date: 2017-01-11T17:41:09-04:00
 draft: false
 author: "Victor Mendonça"
-description: "Quick and simple differences between using ``$(..)``, ``(..)`` and ``{..;}``."
-tags: ["Bash", "Linux"]
+description: "Explanation on the difference between `$(..)`, `(..)` and `{..;}`."
+tags: ["Linux", "Bash"]
 ---
-
-Bash - Command Substitution, Subshell and Codeblock
 
 Quick and simple differences between using `$(..)`, `(..)` and `{..;}`.
 
@@ -75,7 +73,7 @@ $ { var=2 ;} ; echo $var
 2
 ```
 
-### **Other usages**
+###**Other usages**
 
 **Example 1:**
 
