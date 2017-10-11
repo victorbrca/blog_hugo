@@ -4,7 +4,6 @@ date = "2016-12-05T14:41:00+01:00"
 title = "About"
 author = "author"
 draft = false
-type = "page"
 +++
 
 <img style="float: left; "padding-right: 5px;" src="/img/profile.jpg" hspace="20" height="250" width="250">

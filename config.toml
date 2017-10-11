@@ -150,7 +150,7 @@ url = "https://victorbrca.github.io/blog/"
 
 [[Languages.en.menu.main]]
 name = "About"
-pre = ""
+# pre = ""
 weight = 2
 identifier = "about"
 url = "https://victorbrca.github.io/blog/about/"
