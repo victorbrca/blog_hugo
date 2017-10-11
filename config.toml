@@ -153,7 +153,7 @@ name = "About 2"
 pre = ""
 weight = 2
 identifier = "about"
-url = "https://victorbrca.github.io/about/"
+url = "https://victorbrca.github.io/blog/about/"
 
 [[Languages.en.menu.main]]
 name = "Professional"
