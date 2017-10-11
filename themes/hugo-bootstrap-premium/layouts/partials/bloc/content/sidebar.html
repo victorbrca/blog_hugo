@@ -1,0 +1,54 @@
+<div>
+  {{ if and .IsPage (eq .Params.toc true) }}
+    <div class="section">
+      <header><div class="title">TableOfContents</div></header>
+      <div class="list-default">{{ .TableOfContents }}</div>
+    </div>
+    {{ end }}
+
+   <!-- Avatar -->
+    <div class="section">
+      <header><div class="title"></div></header>
+      <div class="content">
+        <img style="float: center; padding-right: 5px;" src="/img/avatar.jpg" hspace="20" width="240"></img>
+        <br/>
+      </div>
+    </div>
+
+    <div class="section">
+      <header><div class="title"><b>{{ i18n "latestposts" }}</b></div></header>
+      <div class="content">
+        <ul>
+        {{ range first 5 (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+          <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    {{ range $key, $value := .Site.Taxonomies }}
+      {{ $len := len $value }}
+      {{ if (not ( eq $len 0 ) ) }}
+      <div class="section taxonomies">
+        <header><div class="title"><b>{{ $key | singularize }}</b></div></header>
+
+        <div class="content1">
+          <ul>
+            {{ range first 10 $value.ByCount }}<li><a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+
+    <!-- Twitter Feed -->
+    <div class="section">
+      <!-- <header><div class="title"><b>Twitter</b></div></header> -->
+      <div class="content" align="right">
+        <a class="twitter-timeline" data-width="260" data-height="450" href="https://twitter.com/victorbrca">Tweets by victorbrca</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+</div>
