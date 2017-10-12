@@ -1,6 +1,6 @@
 # hostname (and path) to the root eg. https://appernetic.github.io/
-# baseurl = "/"
-baseurl = "https://victorbrca.github.io/blog/"
+baseurl = "/"
+# baseurl = "https://victorbrca.github.io/blog/"
 
 # Remark if you want to disable multilingual support.
 DefaultContentLanguage = "en"
@@ -25,7 +25,7 @@ metaDataFormat = "toml"
 # Theme to use (located in /themes/THEMENAME/)
 theme = "hugo-bootstrap-premium"
 # Pagination
-paginate = 10
+paginate = 3
 paginatePath = "page"
 
 # Enable Disqus integration
