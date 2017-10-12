@@ -37,7 +37,7 @@ post = "/:year/:month/:day/:filename/"
 code = "/:filename/"
 
 [taxonomies]
-tag = "Tags"
+tag = "tags"
 topic = "topics"
 
 [author]
