@@ -4,7 +4,7 @@ date: 2018-01-25T11:09:12-05:00
 draft: false
 author: "Victor Mendonça"
 description: "Blog about my custom stand-up desk"
-tags: ["Linux", "Home Office"]
+tags: ["Linux", "Hardware"]
 ---
 
 After commuting  close to 1000kms a week for 6 years, I have decided to the the leap and move to Toronto. After all, I was here around 4 nights a week, and having to commute back and forward between Mississauga and Toronto had become a hassle. This would also increas my work drive (from 85kms each way to 115kms), but luckily my client agreed for me to work remote 4 days of the week, with made my move even more possible.
