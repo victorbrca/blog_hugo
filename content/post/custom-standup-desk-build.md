@@ -1,9 +1,9 @@
 ---
 title: "Custom Stand-up Desk Build"
-date: 2018-01-25T11:09:12-05:00
+date: 2017-12-25T11:09:12-05:00
 draft: false
 author: "Victor Mendonça"
-description: "Blog about my custom stand-up desk"
+description: "Details about my custom stand-up desk"
 tags: ["Linux", "Hardware"]
 ---
 
