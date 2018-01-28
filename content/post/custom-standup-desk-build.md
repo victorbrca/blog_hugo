@@ -7,7 +7,7 @@ description: "Details about my custom stand-up desk"
 tags: ["Linux", "Hardware"]
 ---
 
-After commuting  close to 1000kms a week for 6 years, I have decided to the the leap and move to Toronto. After all, I was here around 4 nights a week, and having to commute back and forward between Mississauga and Toronto had become a hassle. This would also increas my work drive (from 85kms each way to 115kms), but luckily my client agreed for me to work remote 4 days of the week, with made my move even more possible.
+After commuting  close to 1000kms a week for 6 years, I have decided to the the leap and move to Toronto. After all, I was here around 4 nights a week, and having to commute back and forward between Mississauga and Toronto had become a hassle. This would also increase my work drive (from 85kms each way to 115kms), but luckily my client agreed for me to work remote 4 days of the week, with made my move even more possible.
 
 Seeing how I would be working from home most of the week, and how my office would be in the living room of our new place, I needed a space that not only was functional, but that could hold my three 27" monitors have have a clean look. I also wanted a standing desk because I can no longer get used to sitting the whole day.
 
