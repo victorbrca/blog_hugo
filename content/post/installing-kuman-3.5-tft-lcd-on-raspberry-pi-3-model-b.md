@@ -16,7 +16,7 @@ b. Insert the SD card and make note of the device being used (**make sure you ge
 c. Use `dd` to copy the image to the SD card (the values for `if` and `of` should be changed accordingly. If you never used `dd` please do yourself a favor and read up first)
 
 ```
-sudo bs=4M if=2018-04-18-raspbian-stretch.img of=/dev/mmcblk0 status=progress oflag=sync
+sudo dd bs=4M if=2018-04-18-raspbian-stretch.img of=/dev/mmcblk0 status=progress oflag=sync
 ```
 
 d. Once the process is done, mount (if needed) the `boot` and `rootfs` partitions
