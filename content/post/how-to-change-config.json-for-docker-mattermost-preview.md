@@ -1,5 +1,5 @@
 ---
-title: "How to Change cconfig.json for Docker Mattermost Preview"
+title: "How to Change config.json for Docker Mattermost Preview"
 date: 2018-07-05T15:20:24-04:00
 draft: false
 author: "Victor Mendonça"
