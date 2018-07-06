@@ -23,15 +23,13 @@ apt update
 apt install vim
 ```
 
-c. Change `config.json` as needed
+c. Change `config_docker.json` as needed
 
 ```
 cd /mm/mattermost/config
 
-vim config.json
+vim config_docker.json
 ```
-
-_**Note:**_ You might need to update `config_docker.json` in the same folder
 
 d. Restart the docker container
 
