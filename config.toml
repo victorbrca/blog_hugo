@@ -146,14 +146,14 @@ name = "Home"
 pre = ""
 weight = 1
 identifier = "post"
-url = "https://victorbrca.github.io/blog/"
+url = "https://blog.victormendonca.com/"
 
 [[Languages.en.menu.main]]
 name = "About"
 # pre = ""
 weight = 2
 identifier = "about"
-url = "https://victorbrca.github.io/blog/about/"
+url = "https://blog.victormendonca.com/about/"
 
 [[Languages.en.menu.main]]
 name = "Professional"
@@ -162,11 +162,11 @@ identifier = ""
 url = "http://geekit.ca/"
 # pre = "<i class='fa fa-road'></i>"
 
-[[Languages.en.menu.main]]
-name = "Personal"
-weight = 4
-identifier = ""
-url = "https://victorbrca.github.io/personal"
+# [[Languages.en.menu.main]]
+# name = "Personal"
+# weight = 4
+# identifier = ""
+# url = "https://personal.victormendonca.com/"
 
 [[Languages.en.menu.footer]] # add  links to the bottom right corner.
 name = "Disclaimer"

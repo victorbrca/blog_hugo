@@ -9,7 +9,7 @@ tags: ["Linux", "Bash", "Windows"]
 
 So you have installed Bash for Windows, but forgot your password!! That's easy to fix, and here's how:
 
-a. Find you username by running Bash for Windows and executing `whoami`
+a. Find your username by running Bash for Windows and executing `whoami`
 
 ```
 $ whoami
