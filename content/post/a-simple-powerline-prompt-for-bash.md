@@ -9,7 +9,7 @@ tags: ["bash", "Linux"]
 
 Powerline-simple is a simple powerline prompt for Bash, written by yours truly.
 
-![](../../static/img/powerline-simple.png)
+![](/img/powerline-simple.png)
 
 The prompt displays the following information:
 
@@ -21,6 +21,6 @@ The prompt displays the following information:
 * Current path
 * Git status
 
-![](../../static/img/powerline-simple-git.gif)
+![](/img/powerline-simple-git.gif)
 
 You can download it from the [GitHub](https://github.com/victorbrca/powerline-simple) project page.
