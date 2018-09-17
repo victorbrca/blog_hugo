@@ -26,11 +26,11 @@
       {{ $len := len $value }}
       {{ if (not ( eq $len 0 ) ) }}
       <div class="section taxonomies">
-        <header><div class="title"><b>{{ $key }}</b></div></header>
+        <header><div class="title"><b>{{ $key | singularize }}</b></div></header>
 
         <div class="content1">
           <ul>
-            {{ range first 20 $value.ByCount }}<li><a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
+            {{ range first 10 $value.ByCount }}<li><a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
           </ul>
         </div>
       </div>
@@ -43,7 +43,7 @@
       <header><div class="title"><b>{{ i18n "latestposts" }}</b></div></header>
       <div class="content">
         <ul>
-        {{ range first 7 (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+        {{ range first 5 (where (where .Site.Pages "Type" "post") "IsPage" true) }}
           <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
           </li>

@@ -1,13 +1,13 @@
 ---
 title: "How to Create an Init Like Script"
-date: 2018-01-31T23:18:11-05:00
-draft: true
+date: 2018-09-17T11:40:47-04:00
+draft: false
 author: "Victor Mendonça"
 description: "How to create an init like script to run in the background as a service"
 tags: ["Bash", "Linux"]
 ---
 
-On this tutorial I will explain how to create a quick init like script to be run in the background. We will **not** be adding this script to `/etc/init` or look into how to run it at startup. Instead we will run it manually. We will be looking at how to add it as a system service in another post.
+On this tutorial I will explain how to create a quick init like script to be run in the background. We will **not** be adding this script to `/etc/init` or look into how to run it at startup. Instead we will run it manually. If you are looking for a Systemd version of this tutorial, check out my previous post [Creating a Simple Systemd User Service](https://blog.victormendonca.com/2018/05/14/creating-a-simple-systemd-user-service/).
 
 First let's create our service script. This is the daemon that will be running in the background. For this example we will create a script that monitors a log file:
 

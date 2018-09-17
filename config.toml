@@ -25,7 +25,7 @@ metaDataFormat = "toml"
 # Theme to use (located in /themes/THEMENAME/)
 theme = "hugo-bootstrap-premium"
 # Pagination
-paginate = 3
+paginate = 5
 paginatePath = "page"
 
 # Enable Disqus integration
@@ -77,7 +77,7 @@ switchlang = false
 BrandImage = "" #top header brand image.
 brand = "Victor's blog" # brand image alt text.
 topline = "Technical blog of your average Linux user"
-footline = "code with <i class='fa fa-heart'></i>"
+footline = "code with <i class='fa fa-linux'></i>"
 
 customJS = []
 customCSS = ["/css/style_custom.css"]
@@ -138,7 +138,7 @@ extensionmask = []
 [Languages.en]
 languageCode = "en"
 weight = 1
-copyright = "(c) 2016 Copyright my blog"
+copyright = "(c) 2018 Copyright Victor Mendonça"
 title = "Victor's Blog" # Site title
 
 [[Languages.en.menu.main]]
@@ -168,15 +168,15 @@ url = "http://geekit.ca/"
 # identifier = ""
 # url = "https://personal.victormendonca.com/"
 
-[[Languages.en.menu.footer]] # add  links to the bottom right corner.
-name = "Disclaimer"
-pre = "<i>&middot;</i>"
-identifier = "disclaimer"
-weight = 1
-url = "/disclaimer/"
-
-[[Languages.en.menu.footer]]
-name = "Terms"
-identifier = "terms"
-weight = 2
-url = "/terms/"
+# [[Languages.en.menu.footer]] # add  links to the bottom right corner.
+# name = "Disclaimer"
+# pre = "<i>&middot;</i>"
+# identifier = "disclaimer"
+# weight = 1
+# url = "/disclaimer/"
+#
+# [[Languages.en.menu.footer]]
+# name = "Terms"
+# identifier = "terms"
+# weight = 2
+# url = "/terms/"
