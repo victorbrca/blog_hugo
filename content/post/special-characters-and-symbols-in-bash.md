@@ -1,7 +1,7 @@
 ---
 title: "Special Characters and Symbols in Bash"
-date: 2018-09-17T01:25:09-04:00
-draft: true
+date: 2018-09-18T01:25:08-30:00
+draft: false
 author: "Victor Mendonça"
 description: ""
 tags: ["Bash", "Linux"]
