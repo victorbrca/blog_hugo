@@ -1,7 +1,7 @@
 ---
 title: "Editing Multiple Lines in Vim"
-date: 2018-09-17T11:42:47-04:00
-draft: true
+date: 2018-09-19T10:41:47-04:00
+draft: false
 author: "Victor Mendonça"
 description: "How to edit multiple lines in VIM"
 tags: ["Bash", "Linux", "Vim"]
