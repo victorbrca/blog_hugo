@@ -11,19 +11,19 @@ Here's a quick and simple way to backup files in Bash by using Bash's built-in b
 
 Let's first create a file:
 
-```
-ls -l > listing.txt
+```bash
+$ ls -l > listing.txt
 ```
 
 Now let's create a backup:
 
-```
+```bash
 $ cp listing.txt{,.bak}
 ```
 
 And the result is a new file with the `.bak` extension:
 
-```
+```bash
 $ ls -l listing*
 Permissions Size User   Group Date Modified Name
 .rw-r--r--  2.5k victor users 15 Oct 14:21  listing.txt
@@ -32,13 +32,13 @@ Permissions Size User   Group Date Modified Name
 
 How about getting fancy and adding a date?
 
-```
+```bash
 cp listing.txt{,.$(date +%Y%m%d_%H%M)}
 ```
 
 And the result:
 
-```
+```bash
 $ ls -l listing.tx*
 Permissions Size User   Group Date Modified Name
 .rw-r--r--  2.5k victor users 15 Oct 14:21  listing.txt
