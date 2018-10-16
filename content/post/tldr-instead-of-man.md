@@ -47,3 +47,7 @@ npm install -g tldr
 ```bash
 sudo snap install tldr
 ```
+
+**Android**
+
+https://play.google.com/store/apps/details?id=io.github.hidroh.tldroid
