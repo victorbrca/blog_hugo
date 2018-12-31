@@ -4,7 +4,7 @@ date: 2018-10-16T01:07:31-04:00
 draft: true
 author: "Victor Mendonça"
 description: "Using fzf for a better Git workflow"
-tags: ["Linux", ."Bash", "fzf", "Git"]
+tags: ["Linux", "Bash", "fzf", "Git"]
 ---
 
 ![](../../static/img/fzf-and-git-for-the-win/git-cmt-show.gif)
