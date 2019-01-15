@@ -49,7 +49,7 @@ Serving HTTP on 0.0.0.0 port 8888 ...
 
 ### Using HTTPS/SSL
 
-And you can also create a SSL enabled listener with Python. For this test, you will need to have the certificate and key in `pem` format.
+And you can also create aN SSL enabled listener with Python. For this test, you will need to have the certificate and key in `pem` format.
 
 **Pyton 3**
 

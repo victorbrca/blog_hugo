@@ -19,14 +19,14 @@ b. Browse to your AP, write down the IP address
 
 c. Select the AP, go to `Config=>Manage Device=>Forget this device` and click on `Forget` (click ok on the alert)
 
-d. Login to the new controller and on the first screen restore the backup you save on step `a`
+d. Login to the new controller and on the first screen restore the backup you saved on step `a`
 
-e. Once the controller is back up, SSH into the device's AP with the default user (`ubnt:ubnt` or `root:ubnt`) and run the following command (change `[controler_ip] for the IP of your controller`)
+e. Once the controller is back up, SSH into the AP with the default user (`ubnt:ubnt` or `root:ubnt`) and run the following command (change `[controler_ip]` for the IP of your controller)
 
 ```
 set-inform http://[controller-ip]:8080/inform
 ```
 
-f. On the new controller, under devices, the AP should be showing for 'adoption'. Click on `Adopt`
+f. On the new controller, under devices, the AP should be showing for 'adoption'. Click on `ADOPT`
 
 ![](../img/how-to-migrate-unifi-controller/img2.png)
