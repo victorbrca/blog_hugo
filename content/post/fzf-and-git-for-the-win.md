@@ -7,6 +7,8 @@ description: "Using fzf for a better Git workflow"
 tags: ["Linux", "Bash", "fzf", "Git"]
 ---
 
+If you never heard of `fzf`, it's a command line fuzzy finder that can be used for
+
 ![](../../static/img/fzf-and-git-for-the-win/git-cmt-show.gif)
 
 
