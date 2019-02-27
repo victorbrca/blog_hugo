@@ -9,7 +9,7 @@ tags: ["Bash", "Linux"]
 
 **powerline-2column** is a simple powerline like prompt for Bash that displays information in two columns.
 
-![](../img/bash-theme-powerline-2column/prompt.png)
+![](/img/bash-theme-powerline-2column/prompt.png)
 
 The prompt provides the following information:
 
@@ -36,6 +36,6 @@ The prompt provides the following information:
 
 Check out some of the things it can do on the video below.
 
-![](../img/bash-theme-powerline-2column/demo.gif)
+![](/img/bash-theme-powerline-2column/demo.gif)
 
 You can download a copy from my GitHub repo - https://github.com/victorbrca/powerline-2column

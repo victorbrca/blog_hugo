@@ -13,7 +13,7 @@ a. Logon to your old Unifi controller, go to `Settings=>Auto Backup` and downloa
 
 **Note:** _Force a new backup if you have new changes_
 
-![](../img/how-to-migrate-unifi-controller/img1.png)
+![](/img/how-to-migrate-unifi-controller/img1.png)
 
 b. Browse to your AP, write down the IP address
 
@@ -29,4 +29,4 @@ set-inform http://[controller-ip]:8080/inform
 
 f. On the new controller, under devices, the AP should be showing for 'adoption'. Click on `ADOPT`
 
-![](../img/how-to-migrate-unifi-controller/img2.png)
+![](/img/how-to-migrate-unifi-controller/img2.png)

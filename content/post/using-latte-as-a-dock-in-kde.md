@@ -29,4 +29,4 @@ F. Now try to drag an application icon (like from `/usr/share/applications`) to 
 
 Here's a gif animation of the whole process.
 
-![](../img/using-latte-as-a-dock-in-kde/latte-dock.gif)
+![](/img/using-latte-as-a-dock-in-kde/latte-dock.gif)

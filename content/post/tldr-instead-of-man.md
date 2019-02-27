@@ -20,7 +20,7 @@ $ tldr tldr
   tldr command       
 ```
 
-![](../img/tldr-instead-of-man/tldr.rsync.png)
+![](/img/tldr-instead-of-man/tldr.rsync.png)
 
 TLDR pages is community driven and holds common commands for UNIX, Linux, macOS, SunOS and Windows. The amount of commands available is already pretty vast, and users are encouraged to contribute with new pages on their git repo - https://github.com/tldr-pages/tldr.
 
