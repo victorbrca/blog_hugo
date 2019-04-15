@@ -17,7 +17,7 @@ First, let's install all the needed software:
 
 After installing the 2 packages you should be able to run `libinput-gestures -d` as root and try the pre-defined gestures. You should see an output when you swipe left/right/up/down with 3/4 fingers and pinch in/out.
 
-```
+```none
 # libinput-gestures -d
 
 libinput-gestures: session unknown+unknown on Linux-5.0.6-arch1-1-ARCH-x86_64-with-arch, python 3.7.3, libinput 1.13.0
@@ -38,7 +38,7 @@ libinput-gestures: SWIPE right 3 [755.69, -17.479999999999993]
 
 Let's add your user to the `input` group (because it should not run as `root`), then re-login:
 
-```
+```none
 sudo gpasswd -a [user] input
 ```
 
@@ -46,7 +46,7 @@ Now let's edit our personal config file in `~/.config/libinput-gestures.conf`. U
 
 For example, my config file looks like this:
 
-```
+```none
 # Gestures
 gesture swipe up 3 xdotool key Ctrl+F9
 gesture swipe up 4 xdotool key Ctrl+F10
@@ -65,13 +65,13 @@ And the keyboard shortcuts are mapped to (KDE):
 
 Let's configure the gestures to start with the desktop environment:
 
-```
+```none
 $ libinput-gestures-setup autostart
 ```
 
 And start the gestures for the current session:
 
-```
+```none
 $ libinput-gestures-setup start
 
 Icon theme "papirus" not found.
