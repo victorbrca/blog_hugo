@@ -12,7 +12,7 @@ Bash arrays can be great for iterating over a list of items.  I'm giving a quick
 Example:
 
 |#|Service|Path|Config File|
-|-|---|---|---|
+|:-:|:---:|:---:|:---:|
 |1|CUPS|/etc/cups|cupsd.conf|
 |2|MPD|/etc|mpd.conf|
 |3|SSHD|/etc/ssh|sshd.conf|
