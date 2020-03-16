@@ -3,7 +3,7 @@ title: "RHCSA V8: Configure Disk Compression"
 date: 2020-03-14T14:56:39-04:00
 draft: false
 author: "Victor Mendonça"
-description: ""
+description: "Notes on configuring disk compression with VDO"
 tags: ["Linux", "RedHat", "RHCSA"]
 ---
 
@@ -116,7 +116,7 @@ Compression operates on blocks that have not been identified as duplicates. When
 <br>
 ## Configuration Steps
 
-Install 'vdo' (and if not installed by default 'kmod-vdo')
+Install `vdo` (and if not installed by default `kmod-vdo`)
 
 ```
 # yum install vdo
@@ -134,7 +134,7 @@ Create the volume
 # vdo create --name=[name] --device=/dev/[device] --vdoLogicalSize=[VDO logical size] --sparseIndex=enabled --vdoSlabSize=[slab size]
 ```
 
-_Note: Using '--sparseIndex=disabled' will enable 'dense' indexing_
+_Note: Using `--sparseIndex=disabled` will enable 'dense' indexing_
 
 Optionally add LVM config, and/or create the file system (make sure to use the option to not discard blocks)
 
@@ -156,13 +156,13 @@ Mount the device
 # mount /dev/mapper/[name] /mount/point
 ```
 
-To add it to '/etc/fstab'. You will need to add additional params so that systemd waits for VDO to start before mounting
+To add it to `/etc/fstab`. You will need to add additional params so that systemd waits for VDO to start before mounting
 
 ```
 # /dev/mapper/vdo-device /mount/point [fstype] defaults,_netdev,x-systemd.device-timeout=0,x-systemd.requires=vdo.service 0 0
 ```
 
-See man pages for 'systemd.mount':
+See man pages for `systemd.mount`:
 
 ```nothing
 x-systemd.device-timeout=
