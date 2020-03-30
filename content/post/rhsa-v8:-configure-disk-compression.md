@@ -32,11 +32,11 @@ Each VDO volume has two distinct memory requirements:
 <br>
 #### The VDO module
 
-VDO requires 370 MB of DRAM plus an additional 268 MB per each 1 TB of physical storage managed by the volume.  
+VDO requires 370 MB of RAM plus an additional 268 MB per each 1 TB of physical storage managed by the volume.  
 <br>
 #### The Universal Deduplication Service (UDS) index
 
-UDS requires a minimum of 250 MB of DRAM, which is also the default amount that deduplication uses.  
+UDS requires a minimum of 250 MB of RAM, which is also the default amount that deduplication uses.  
 
 The memory required for the UDS index is determined by the index type and the required size of the deduplication window:       
 
@@ -97,7 +97,7 @@ To disable deduplication during VDO block creation (so only compression is used)
 # vdo create --name=[name] --device=/dev/[device] --vdoLogicalSize=[VDO logical size] --deduplication=disabled --vdoSlabSize=[slab size]
 ```
 
-To enable/disable deduplication on a existing block
+To enable/disable deduplication on an existing block
 
 ```
 # vdo enableDeduplication --name=my_vdo
