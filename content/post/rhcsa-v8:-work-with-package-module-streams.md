@@ -14,11 +14,11 @@ These are my study notes for the RHCSA exam on YUM modules. There's most likely 
 ## Definition
 
 RHEL 8 content is distributed through two main repositories: BaseOS and AppStream.  
-<br>
+
 #### **BaseOS**
 
 Content in the BaseOS repository is intended to provide the core set of the underlying OS functionality that provides the foundation for all installations. This content is available in the RPM format and is subject to support terms similar to those in previous releases of Red Hat Enterprise Linux.  
-<br>
+
 #### **AppStream**
 
 Content in the AppStream repository includes additional user-space applications, runtime languages, and databases in support of the varied workloads and use cases. Content in AppStream is available in one of two formats - the familiar RPM format and an extension to the RPM format called modules.
@@ -44,7 +44,6 @@ postgresql               12            client, server                  PostgreSQ
 Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 ```
 
-<br>
 For httpd on Centos8, currently only one stream (version) is available, and profiles are the package type (common, minimal, development)
 
 ![](/img/rhsa-v8-work-with-package-module-streams/httpd.png)
@@ -60,17 +59,16 @@ httpd                 2.4 [d][e]           common [d], devel, minimal           
 Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 ```
 
-<br>
 ## Working with Modules
 
 ### Getting Information on Modules
-<br>
+
 Listing all modules
 
 ```
 # yum module list
 ```
-<br>
+
 Listing module summary for one module with `yum module list [module]`
 
 ```nothing
@@ -81,7 +79,7 @@ CentOS-8 - AppStream
 Name                  Stream               Profiles                              Summary
 httpd                 2.4 [d][e]           common [d], devel, minimal            Apache HTTP Server
 ```
-<br>
+
 Listing info on a module with `yum module info [module]`
 
 ```nothing
@@ -122,7 +120,7 @@ Artifacts        : httpd-0:2.4.37-16.module_el8.1.0+256+ae790463.src
                  : mod_ssl-1:2.4.37-16.module_el8.1.0+256+ae790463.x86_64
                  : mod_ssl-debuginfo-1:2.4.37-16.module_el8.1.0+256+ae790463.x86_64
 ```
-<br>
+
 Listing profiles with `yum module info --profile [module]`
 
 ```nothing
@@ -141,23 +139,23 @@ devel   : httpd
         : httpd-tools
 minimal : httpd
 ```
-<br>
+
 You can also filter the information with `[module_name]:[stream]`
 
 ```
 # yum module info --profile php:7.3
 ```
-<br>
+
 ### Enabling Stream
 
 Note that switching module streams will not alter installed packages. You will need to remove a package, enable the stream and then install the package.  
-<br>
+
 Enable the stream for 'postgresql' v9.6
 
 ```nothing
 # yum module enable postgresql:9.6
 ```
-<br>
+
 Enable the httpd devel profile
 
 ```nothing
@@ -169,13 +167,13 @@ Dependencies resolved.
 Nothing to do.
 Complete!
 ```
-<br>
+
 Then install the package
 
 ```
 # yum install postgresql httpd  
 ```
-<br>
+
 To change a module stream again, you will need to run `yum module reset [module name]`, and then enable the new module.  
 
 ```nothing

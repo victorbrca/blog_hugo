@@ -50,11 +50,11 @@ _If installed via plugin_
 
 g. In the jails configuration menu, select the new Plex jail and add the mount point for the media folder. Try to keep the same path as the old jail so you won't have to edit your library. If you don't remember that the path was, you can access it by looking at the contents of `/mnt/[Volume]/jails/.[JAIL_NAME].meta/fstab`
 
-```
+```none
 # cat .plex.meta/fstab
 /mnt/Volume1/Movies /mnt/Volume1/jails/plex//mnt/Media nullfs rw 0 0
 ```
-<br>
+
 h. Start the plugin and try to access it via web
 
 ![](/img/how-to-move-plex-installation-on-freenas/manage.png)

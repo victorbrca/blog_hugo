@@ -11,7 +11,6 @@ tags: ["Linux", "RedHat", "RHCSA"]
 
 These are my study notes for the RHCSA exam on disk compression. There's most likely more information than what's needed for the exam, and I cannot guarantee that all information is correct.
 
-<br>
 ## Definition
 
 Virtual Data Optimizer (VDO) provides inline data reduction for Linux in the form of deduplication, compression, and thin provisioning. When you set up a VDO volume, you specify a block device on which to construct your VDO volume and the amount of logical storage you plan to present.  
@@ -29,11 +28,11 @@ _Physical disk -> VDO -> Volumegroup -> Logical volume -> file system_
 ### Memory
 
 Each VDO volume has two distinct memory requirements:  
-<br>
+
 #### The VDO module
 
 VDO requires 370 MB of RAM plus an additional 268 MB per each 1 TB of physical storage managed by the volume.  
-<br>
+
 #### The Universal Deduplication Service (UDS) index
 
 UDS requires a minimum of 250 MB of RAM, which is also the default amount that deduplication uses.  
@@ -44,13 +43,12 @@ The memory required for the UDS index is determined by the index type and the re
 
 _**Note:** Sparse is the recommended configuration._
 
-<br>
 ### Storage
-<br>
-#### **Logical Size**
+
+#### Logical Size
 
 Specifies the logical VDO volume size. The VDO Logical Size is how much storage we tell the OS that we have. Because of reduction and deduplication, this number will be bigger than the real physical size. This ratio will vary according to the type of data that is being stored (binary, video, audio, compressed data will have a very low ratio).  
-<br>
+
 #### Red Hat's Recommendation
 
 **For active VMs or container storage**
@@ -61,11 +59,9 @@ _Use logical size that is ten times the physical size of your block device. For 
 
 _Use logical size that is three times the physical size of your block device. For example, if your block device is 1TB in size, use 3T here._          
 
-<br>
 #### **Slab Size**
 
 Specifies the size of the increment by which a VDO is grown. All of the slabs for a given volume will be of the same size, which may be any power of 2 multiple of 128 MB up to 32 GB. At least one entire slab is reserved by VDO for metadata, and therefore cannot be used for storing user data.  
-
 
 The default slab size is 2 GB in order to facilitate evaluating VDO on smaller test systems. A single VDO volume may have up to 8096 slabs. Therefore, in the default configuration with 2 GB slabs, the maximum allowed physical storage is 16 TB. When using 32 GB slabs, the maximum allowed physical storage is 256 TB.
 
@@ -73,7 +69,6 @@ The default slab size is 2 GB in order to facilitate evaluating VDO on smaller t
 
 _The table above is from RHEL 7 documentation_
 
-<br>
 #### **Examples of VDO System Requirements by Physical Volume Size**
 
 The following tables provide approximate system requirements of VDO based on the size of the underlying physical volume. Each table lists requirements appropriate to the intended deployment, such as primary storage or backup storage.    
@@ -82,9 +77,8 @@ The following tables provide approximate system requirements of VDO based on the
 
 ![](/img/rhsa-v8-configure-disk-compression/backup_storage.png)
 
-<br>
 ### Deduplication, Indexing and Compression
-<br>
+
 #### Deduplication and Index
 
 VDO uses a high-performance de-duplication index called UDS to detect duplicate blocks of data as they are being stored. The UDS index provides the foundation of the VDO product. For each new piece of data, it quickly determines if that piece is identical to any previously stored piece of data. If the index finds match, the storage system can then internally reference the existing item to avoid storing the same information more than once.
@@ -104,7 +98,7 @@ To enable/disable deduplication on an existing block
 
 # vdo disableDeduplication --name=my_vdo
 ```
-<br>
+
 #### Compression
 
 In addition to block-level deduplication, VDO also provides inline block-level compression using the HIOPS Compression™ technology.  
@@ -113,7 +107,6 @@ VDO volume compression is on by default.
 
 Compression operates on blocks that have not been identified as duplicates. When unique data is seen for the first time, it is compressed. Subsequent copies of data that have already been stored are deduplicated without requiring an additional compression step.
 
-<br>
 ## Configuration Steps
 
 Install `vdo` (and if not installed by default `kmod-vdo`)
@@ -175,7 +168,6 @@ x-systemd.requires=
           unit and another systemd unit, such as a device or mount unit.
 ```
 
-<br>
 ## Administration
 
 Check for real physical space usage  
@@ -186,7 +178,6 @@ Check for real physical space usage
 Device              Size   Used   Available   Use%   Space Saving%
 /dev/mapper/my_vdo  1.8T  407.9G    1.4T       22%       21%
 ```
-<br>
 
 - - -
 

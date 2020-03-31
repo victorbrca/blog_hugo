@@ -17,12 +17,10 @@ You may be trying to figure out what version will be best for you, and I'm hopin
 
 Something to take in consideration is that the exam is valid for 3 years, or 2 releases (meaning that once RHEL 9 is out, your RHSCA on RHEL 7 is no longer valid). And seeing on how RHEL 6 to 7 took 4 years, and RHEL 7 to 8 took 5 years, with RHCSA v7 you will most likely run out of the 3 years before RHEL 9 is released.
 
-<br>
 ### Objective Differences - RHCSA v7 vs v8
 
-<br>
 #### => RHCSA v7 - Content No Longer Needed for V8
-<br>
+
 **Operate running systems**
 
 + Access a virtual machine’s console.
@@ -51,9 +49,9 @@ Something to take in consideration is that the exam is valid for 3 years, or 2 r
 + Configure firewall settings using firewall-config, firewall-cmd, or iptables.
   + iptables is no longer covered
 
-<br>
+
 #### => RHCSA v8 - New Content
-<br>
+
 **Operate running systems**
 
 + Preserve system journals
