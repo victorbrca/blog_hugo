@@ -1,7 +1,7 @@
 ---
 title: "AWS Routing Policies - Visual Comparison"
-date: 2020-04-23T19:31:50-04:00
-draft: true
+date: 2020-04-28T14:45:00-04:00
+draft: false
 author: "Victor Mendonça"
 description: "A visual overview of the different AWS route 53 routing policies"
 tags: ["AWS"]
