@@ -14,4 +14,10 @@ Victor started using Linux in 2004 while working as a network support rep for 3C
 
 Around 2007 he started a personal Linux blog at wazem.blogspot.com. The blog was a bigger success than he expected, with an average of 3400 visits per month.
 
-In 2008 Victor decided to make a career out of his passion and enrolled in a Linux/Unix administration course at Seneca College. Victor is also Certified in A+, Network+ and LPI-1.
+In 2008 Victor decided to make a career out of his passion and enrolled on a Linux/Unix administration course at Seneca College. Victor also has the following certifications:
+
++ Certified in AWS Certified Solutions Architect Associate, 2020
++ Red Hat Certified Specialist in Ansible Automation, 2019
++ Puppet Certified Professional, 2015
++ Network+, 2004
++ A+, 2004
