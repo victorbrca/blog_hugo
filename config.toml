@@ -159,7 +159,13 @@ url = "https://blog.victormendonca.com/about/"
 name = "Professional"
 weight = 3
 identifier = ""
-url = "http://geekit.ca/"
+url = "https://geekit.ca/"
+
+[[Languages.en.menu.main]]
+name = "Manhattan Blog"
+weight = 4
+identifier = ""
+url = "https://manhattan.victormendonca.com/"
 # pre = "<i class='fa fa-road'></i>"
 
 # [[Languages.en.menu.main]]
