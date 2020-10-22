@@ -1,7 +1,7 @@
 ---
 title: "How to Configure a UPS Between Linux and FreeNAS"
-date: 2020-10-21T13:01:12-04:00
-draft: true
+date: 2020-10-22T11:00:00-04:00
+draft: false
 author: "Victor Mendonça"
 description: "Configure a UPS Between Linux and FreeNAS with NUT"
 tags: ["Linux", "Shell", "Hardware", "FreeNAS"]
@@ -188,7 +188,7 @@ d. Now let's tell `upsmon` to monitor the UPS. Edit `/etc/nut/upsmon.conf` with 
 _Make sure to change the UPS name (`ups_name`) and master password (`my_master_password`)_
 
 ```none
-MONITOR ups_name@localhost 1 upsmaster my_master_password master
+MONITOR ups_name@localhost 1 [master user] [master password] master
 ```
 
 e. Check the status of the NUT server with `systemctl status nut-server`
@@ -296,7 +296,29 @@ a. Login to your FreeNAS and go to Services. Enable the UPS service, set it to s
 
 b. Make the following configuration
 
++ **UPS Mode** - Slave
++ **Identifier** - Name for the UPS
++ **Remote Host** - IP of the master
++ **Remote Port** - Port
++ **Driver** - Look for your UPS model. I could not find my model, so I typed in the driver that I'm using on the master host (usbhid-ups) *
++ **Port or Hostname** - Hostname of the master host
 
+**⚠️ WARNING:** _While this allowed me to save my configuration and the shutdown works, when I access the config page the driver field is blank. This is different than on older versions of FreeNAS where the driver option was only available in Master mode. Beware that it may create problems if you also decide to go this route._
+
+![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.1.png)
+
++ **Shutdown Mode** - I chose 'UPS reaches low battery'
++ **Shutdown Timer** - 30 (default)
++ **Shutdown Command** - I'm using `/sbin/shutdown -p now`
++ **No Communication Warning Time** - 60 (default)
++ **Monitor User** - The slave user you configured in `ups.conf` on the master
++ **Monitor Password** - The slave password you configured in `ups.conf` on the master
+
+![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.2.png)
+
+Check the 'Send Email Status Updates' if you'd like to received emails (also add your email address). Click on save.
+
+![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.3.png)
 
 c. Check the connection to the UPS with the command below
 
@@ -308,13 +330,13 @@ d. Check that FreeNAS is actually monitoring the UPS (`/var/log/nut/ups.log`)
 
 > OL - On line (no power failure)
 >
-> OB - On battery)
+> OB - On battery
 >
 > LB - Low battery
 
 ![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.4.png)
 
-e. Log back to your desktop and confirm that you can see your FreeNAS as a connected client (`upsc -c`)
+e. Log back to your master machine and confirm that you can see FreeNAS as a connected client (`upsc -c`)
 
 _Assuming that my FreeNAS IP is `192.168.10.20`_
 ```none
@@ -339,7 +361,7 @@ a. Install `nut-client`
 b. Add the monitor line to `/etc/ups/upsmon.conf`
 
 ```none
-MONITOR CyberPowerSL700U@10.13.15.200 1 [user] [pass] slave
+MONITOR CyberPowerSL700U@10.13.15.200 1 [slave user] [slave pass] slave
 ```
 
 c. Enable and start the service
@@ -362,7 +384,7 @@ Testing
 
 Now let's test see if all works. Instead of pulling the cord we can instead run `upsmon -c fsd` on the master (this will save wear and tear on your battery). Hopefully we have configured our delay time properly and we should see all our devices powering off, and eventually the UPS as well.
 
-_**Tip:** Because I have hot swap bays on my FreeNAS server, I have removed all drives before testing (to be extra careful and to avoid any issues)._
+_**Tip:** Because I have quick removable drive bays on my FreeNAS server, I have removed all drives before testing (to be extra careful and to avoid any issues)._
 
 ```none
 ➤ sudo upsmon -c fsd
