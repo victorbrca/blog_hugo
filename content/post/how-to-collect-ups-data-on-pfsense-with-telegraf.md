@@ -1,7 +1,7 @@
 ---
 title: "How to Collect UPS Data on pfSense with Telegraf"
-date: 2020-10-29T09:00:00-04:00
-draft: true
+date: 2020-10-29T10:00:00-04:00
+draft: false
 author: "Victor Mendonça"
 description: "How to collect UPS related data from pfSense using Telegraf"
 tags: ["pfSense", "Monitoring"]
