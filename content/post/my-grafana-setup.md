@@ -7,4 +7,4 @@ description: "An overview of my Grafana setup at home"
 tags: ["Linux", "Monitoring"]
 ---
 
-![](img/my-grafana-setup/main.png)
+![](/img/my-grafana-setup/main.png)

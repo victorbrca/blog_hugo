@@ -24,11 +24,11 @@ a. Download Ubuntu 20.04 64-bit for RPI3 and setup your SD card
 
 https://ubuntu.com/download/raspberry-pi
 
-![](img/how-to-install-waveshare-3.5inch-lcd-on-ubuntu-20.04/download-ubuntu.png)
+![](/img/how-to-install-waveshare-3.5inch-lcd-on-ubuntu-20.04/download-ubuntu.png)
 
 Make sure to check the downloaded file
 
-![](img/how-to-install-waveshare-3.5inch-lcd-on-ubuntu-20.04/verify-download.png)
+![](/img/how-to-install-waveshare-3.5inch-lcd-on-ubuntu-20.04/verify-download.png)
 
 b. Power the Pi on, login (SSH or HDMI), change the password and update
 

@@ -93,7 +93,7 @@ h. Create an "Init/Shutdown Script" (change to reflect your path)
 ln -s /mnt/Volume1/home/system/telegraf/telegraf.init /usr/local/etc/rc.d/telegraf ; service telegraf start
 ```
 
-![](img/how-to-install-telegraf-on-freenas/init.png)
+![](/img/how-to-install-telegraf-on-freenas/init.png)
 
 - - -
 

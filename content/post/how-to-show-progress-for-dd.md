@@ -47,7 +47,7 @@ sudo dd bs=4M if=/dev/sdf of=ubuntu-server-20.04.1-updated.iso status=progress o
 ```
 
 _**The output:**_
-![](img/how-to-show-progress-for-dd/dd-2.png)
+![](/img/how-to-show-progress-for-dd/dd-2.png)
 
 #### 1. Running `dd` with `pv`
 
@@ -75,7 +75,7 @@ pv -tpreb ubuntu-20.04.1-preinstalled-server-arm64+raspi.img | sudo dd of=/dev/s
 ```
 
 _**The output:**_
-![](img/how-to-show-progress-for-dd/pv-with-sync.png)
+![](/img/how-to-show-progress-for-dd/pv-with-sync.png)
 
 - - -
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Collect UPS Data on pfSense with Telegraf"
-date: 2020-10-28T17:32:42-04:00
+date: 2020-10-29T09:00:00-04:00
 draft: true
 author: "Victor Mendonça"
 description: "How to collect UPS related data from pfSense using Telegraf"
@@ -10,7 +10,7 @@ tags: ["pfSense", "Monitoring"]
 If you are running Grafana at home to monitor your devices, and you also have pfSense running off a UPS (if you don't, check out my previous article on [How to Setup a USB UPS on pfSense](https://blog.victormendonca.com/2020/10/28/how-to-setup-ups-on-pfsense/)), you may want to pull UPS related data from pfSense.
 
 _My Grafana pfSense config_
-![](./img/how-to-collect-ups-data-on-pfsense-with-telegraf/screen1.png)
+![](/img/how-to-collect-ups-data-on-pfsense-with-telegraf/screen1.png)
 
 - - -
 
@@ -61,7 +61,7 @@ c. Go back to pfSense UI and go into "Services => Telegraf"
 
 d. Configure Telegraf as your usually would, and under "Additional configuration for Telegraf" add the configuration below:
 
-```
+```none
 [[inputs.exec]]
   commands = ["python2.7 /usr/local/etc/getUpsData.py"]
   timeout = "5s"

@@ -13,15 +13,15 @@ a. Start by plugging the USB cable to your pfSense and your UPS
 
 b. Now log in to the pfSense UI and go into "System => Package Manager"
 
-![](img/how-to-setup-ups-on-pfsense/menu-1.png)
+![](/img/how-to-setup-ups-on-pfsense/menu-1.png)
 
 b. Search for 'nut' and click on 'Install'
 
-![](img/how-to-setup-ups-on-pfsense/1.package.png)
+![](/img/how-to-setup-ups-on-pfsense/1.package.png)
 
 c. Go to "Services => UPS => UPS Settings", select "Local USB", give the UPS a name and click on "Save"
 
-![](img/how-to-setup-ups-on-pfsense/ups-settings.png)
+![](/img/how-to-setup-ups-on-pfsense/ups-settings.png)
 
 d. Go back to the "UPS Status" page. If you can see your UPS then you are pretty much done. Now all you have to do is configure any additional NUT settings (if you need).
 

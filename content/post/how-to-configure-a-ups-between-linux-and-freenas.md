@@ -193,7 +193,7 @@ MONITOR ups_name@localhost 1 [master user] [master password] master
 
 e. Check the status of the NUT server with `systemctl status nut-server`
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/status.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/status.png)
 
 f. Enable the NUT server and monitor
 
@@ -292,7 +292,7 @@ c. Restart `nut-server.service`
 
 a. Login to your FreeNAS and go to Services. Enable the UPS service, set it to start automatically and then click on the edit button
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.1.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/freenas.1.png)
 
 b. Make the following configuration
 
@@ -305,7 +305,7 @@ b. Make the following configuration
 
 **⚠️ WARNING:** _While this allowed me to save my configuration and the shutdown works, when I access the config page the driver field is blank. This is different than on older versions of FreeNAS where the driver option was only available in Master mode. Beware that it may create problems if you also decide to go this route._
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.1.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.1.png)
 
 + **Shutdown Mode** - I chose 'UPS reaches low battery'
 + **Shutdown Timer** - 30 (default)
@@ -314,17 +314,17 @@ b. Make the following configuration
 + **Monitor User** - The slave user you configured in `ups.conf` on the master
 + **Monitor Password** - The slave password you configured in `ups.conf` on the master
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.2.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.2.png)
 
 Check the 'Send Email Status Updates' if you'd like to received emails (also add your email address). Click on save.
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.3.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/freenas.config.3.png)
 
 c. Check the connection to the UPS with the command below
 
 > `upsc ups_name@ip:port`
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.3.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/freenas.3.png)
 
 d. Check that FreeNAS is actually monitoring the UPS (`/var/log/nut/ups.log`)
 
@@ -334,7 +334,7 @@ d. Check that FreeNAS is actually monitoring the UPS (`/var/log/nut/ups.log`)
 >
 > LB - Low battery
 
-![](img/how-to-configure-a-ups-between-linux-and-freenas/freenas.4.png)
+![](/img/how-to-configure-a-ups-between-linux-and-freenas/freenas.4.png)
 
 e. Log back to your master machine and confirm that you can see FreeNAS as a connected client (`upsc -c`)
 
