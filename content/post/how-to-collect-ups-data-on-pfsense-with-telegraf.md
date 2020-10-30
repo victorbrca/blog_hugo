@@ -51,7 +51,7 @@ output = "ups,ups.name=BackUPSES750 " + output.rstrip()
 print(output)
 ```
 
-The output of the data will be as shown below. If you would like to format the output data, see the instructions on my GitHub Repo - https://github.com/victorbrca/telegraf-plugins/tree/main/UPS
+The output data will be as shown below. If you would like to format the output, refer to my instructions on my GitHub Repo - https://github.com/victorbrca/telegraf-plugins/tree/main/UPS
 
 ```none
 ups,ups.name=BackUPSES750 battery.charge=100,battery.runtime=18405,ups.status="OL"
