@@ -1,5 +1,5 @@
 ---
-title: "RHCSA v8 - What's New"
+title: "RHCSA v8: What's New"
 date: 2020-03-14T11:31:56-04:00
 draft: false
 author: "Victor Mendonça"

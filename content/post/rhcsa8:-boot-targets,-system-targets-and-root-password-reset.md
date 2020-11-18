@@ -1,10 +1,10 @@
 ---
-title: "RHCSA8: Boot Targets, Systemd Targets and root Password Reset"
+title: "RHCSA v8: Boot Targets, Systemd Targets and root Password Reset"
 date: 2020-11-14T16:00:00-05:00
 draft: false
 author: "Victor Mendonça"
 description: "The ultimate guide to boot/systemd targets and password reset"
-tags: ["Linux", "RedHat", "Systemd"]
+tags: ["Linux", "RedHat", "RHCSA", "Systemd"]
 ---
 
 For quite a while the RHCSA exam has covered topics related to boot targets and the famous root password reset. However, with the introduction of systemd and other related changes this can sometimes become a bit confusing. The methods that were once used for RHEL 6/7 may no longer be available or may not be the 'official' way of doing things anymore.

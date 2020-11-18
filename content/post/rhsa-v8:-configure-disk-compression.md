@@ -1,5 +1,5 @@
 ---
-title: "RHCSA V8: Configure Disk Compression"
+title: "RHCSA v8: Configure Disk Compression"
 date: 2020-03-14T14:56:39-04:00
 draft: false
 author: "Victor Mendonça"
