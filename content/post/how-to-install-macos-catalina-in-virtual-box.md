@@ -176,6 +176,6 @@ reboot
 When the VM has rebooted you should have guest additions working. Remember that not everything works, but the features below should:
 
 + Copy/Paste
-+ Drag and Drop
++ ~Drag and Drop~ _Reported as not working (see comments)_
 + VirtualBox Shared Folders
 + Guest Control
