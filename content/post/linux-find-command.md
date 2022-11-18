@@ -1,6 +1,6 @@
 ---
 title: "Linux find Command"
-date: 2022-11-18T08:42:34-05:00
+date: 2022-11-18T00:21:34-05:00
 draft: false
 author: "Victor Mendonça"
 description: "A quick overview of the Linux find command"
