@@ -93,6 +93,52 @@ After performing the cleanup, you can verify the reduced cache usage. Use the `d
 $ df -hT /var/cache/yum/
 ```
 
+### Doing it all with Ansible
+
+And if you want to, you can use the Ansible playbook below to automate the YUM cache purge and re-creation:
+
+```yaml
+---
+- name: Delete yum cache and run yum check-update
+  # Add your hosts accordingly below
+  hosts: webserver
+  become: yes
+  tasks:
+
+    - name: Check /var usage with df command
+      shell: |
+        df -hT /var | awk '{print $6}' | tail -1 | tr -d '%'
+      register: var_usage_output
+
+    - name: Display /var usage information
+      debug:
+        var: var_usage_output.stdout
+
+    ##-- Block starts --------------------------------------------------------------
+    - when: var_usage_output.stdout|int > 55
+      block:
+
+      - name: Delete yum cache directory
+        file:
+          path: /var/cache/yum
+          state: absent
+
+      - name: Update YUM cache
+        yum:
+          name: ''
+          update_cache: yes
+
+      - name: Check /var usage with df command
+        shell: |
+          df -hT /var | awk '{print $6}' | tail -1
+        register: var_usage_after_cleanup_output
+
+      - name: Display /var usage information
+        debug:
+          var: var_usage_after_cleanup_output.stdout
+    ##-- block ends ----------------------------------------------------------------
+```
+
 ### Conclusion
 
 Regularly cleaning the YUM cache with the `yum clean all` command can help optimize your system's performance by clearing accumulated files. By understanding the available cleaning options and handling untracked repositories, you can ensure that your YUM cache remains streamlined and efficient. Keep your system running smoothly and enjoy the benefits of a clean YUM cache!
