@@ -4,7 +4,7 @@ date: 2020-10-21T15:32:17-00:00
 draft: false
 author: "Victor Mendonça"
 description: "How to quickly create an encrypted USB drive on KDE Plasma"
-tags: ["Linux", "Hardware", "Encryption"]
+tags: ["Linux", "Hardware", "Encryption", "Storage"]
 ---
 
 Need to create an encrypted USB drive? Are your running KDE Plasma?

@@ -4,7 +4,7 @@ date: 2020-10-09T11:28:28-04:00
 draft: false
 author: "Victor Mendonça"
 description: "Two different ways to show progress for dd"
-tags: ["Bash", "Linux", "Hardware"]
+tags: ["Bash", "Linux", "Hardware", "Storage"]
 ---
 
 If you have reached this page I expect that you already know what `dd` is. But you if you don't, `dd` is a command-line utility that is used to convert and copy files. It's commonly found on various (Linux) distro help pages that show new users how to setup USB (or Micro SD) drives to install or run (like Raspberry Pi) the OS.
