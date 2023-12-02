@@ -9,7 +9,7 @@ tags: ["Linux", "RedHat", "RHCE"]
 
 I created this practice exam as part of my preparation for the Red Hat RHCE exam (EX294V84K). It comprises 10 advanced-level tasks, with a focus on incorporating some of the most challenging RHCSA objectives.
 
-Answers will be included on my [fork](https://github.com/victorbrca/rhce8env) of the [rdbreak/rhce8env](https://github.com/rdbreak/rhce8env), and hopefully merged into the main project soon .
+Answers are available on my practice environment at [victorbrca/rhce8-practice-env](https://github.com/victorbrca/rhce8-practice-env/tree/main/practice_exams/exam2/answers).
 
 ## Pre-requisites
 
@@ -207,19 +207,19 @@ The following top-level objectives are covered on this exam, as per 'EX294V84K'.
 </head>
 <body>
     <h1>Server Information</h1>
-    
+
     <div>
         <strong>Hostname:</strong> <span id="hostname">[HOSTNAME]</span>
     </div>
-    
+
     <div>
         <strong>Node Group:</strong> <span id="group">[NODE GROUP]</span>
     </div>
-    
+
     <div>
         <strong>IP Address:</strong> <span id="ip">[IP ADDRESS]</span>
     </div>
-    
+
     <div>
         <strong>Timezone:</strong> <span id="timezone">[TIMEZONE]</span>
     </div>
@@ -286,9 +286,9 @@ _**Before you start, remember you should have added a 10GB disk to node4 and inc
      + 20G logical size
      + Deduplication disabled
      + Auto write mode (write policy)
-    
+
     _**Perform needed VDO steps, as per RHCSA**_
-    
+
   + Create a logical volume with:
      + PV using the vdo device
      + VG named 'databases_vg'
@@ -321,13 +321,13 @@ _**Before you start, remember you should have added a 10GB disk to node4 and inc
   + Adds an ACL that gives the 'pgsqladmin' group full access to `/data/db_troubleshoot`. This should also be the default ACL for new files
 
 > **WARNING**
-> 
+>
 > The postgresql service will fail to start. You will need to logon to the server and fix the issue. The solution/fix can be done manually, but it needs to be part of the playbook.
 
 ---
 
 > **TIP**
-> 
+>
 > While creating the VDO device you may run into the error below:
 >
 >      fatal: [node4]: FAILED! => {
