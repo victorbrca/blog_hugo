@@ -21,7 +21,7 @@ Let's start by installing beep:
 sudo apt update && sudo apt install beep
 ```
 
-Now create the `beep` system group. Any user member of this group will be able to run beep.
+Now create the `beep` system group. Any user member of this group will be able to run beep:
 
 ```bash
 sudo addgroup --system beep
@@ -37,14 +37,14 @@ Create the udev rule to allow the group permission to the speaker:
 
 `/usr/lib/udev/rules.d/90-pcspkr-beep.rules`
 
-```
+```none
 # Add write access to the PC speaker for the "beep" group
 ACTION=="add", SUBSYSTEM=="input", ATTRS{name}=="PC Speaker", ENV{DEVNAME}!="", GROUP="beep", MODE="0620"
 ```
 
 Comment out the existing blacklist for 'pcspkr' in `/etc/modprobe.d/blacklist.conf`:
 
-```
+```none
 # ugly and loud noise, getting on everyone's nerves; this should be done by a
 # nice pulseaudio bing (Ubuntu: #77010)
 # blacklist pcspkr
@@ -64,9 +64,11 @@ beep -f 587 -l 714
 
 ![](/img/playing-a-sound-on-headless-server-boot/beep.jpg)
 
-If that works then we have confirmed that we configured everything correctly. Just a reminder, your computer needs to have a speaker, otherwise beep wont work. 
+If that works then we have confirmed that we configured everything correctly. Just a reminder, your computer needs to have a speaker otherwise beep wont work. 
 
-Now let's create a sample script and the Systemd unit file for the service that will play beep after boot. Create the following script and give it execute permission:
+Now let's create a sample script and the Systemd unit file for the service that will play beep after boot. 
+
+Create the following script and give it execute permission:
 
 `/usr/local/bin/star-trek.sh`
 
