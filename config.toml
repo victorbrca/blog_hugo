@@ -29,8 +29,7 @@ paginate = 5
 paginatePath = "page"
 
 # Enable Disqus integration
-disqusShortname = "victorbrca-github-io"
-
+#disqusShortname = "victorbrca-github-io"
 
 [permalinks]
 post = "/:year/:month/:day/:filename/"
