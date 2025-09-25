@@ -4,7 +4,7 @@ date: 2025-09-03T09:06:30-04:00
 draft: false
 author: "Victor Mendonça"
 description: "Exploring LXD: A Powerful Tool for Home Labs"
-tags: ["Linux", "Containers", "Docker", "Virtualization"]
+tags: ["Linux", "Containers", "Virtualization"]
 ---
 
 Last week, I attended a virtual talk hosted by Canonical on building a homelab with microservices. During the session, I discovered a new (to me) and very cool utility that's perfect for managing virtual machines and containers from a centralized interface: LXD, or the Linux Container Daemon.
