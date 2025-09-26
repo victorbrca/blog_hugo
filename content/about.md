@@ -23,5 +23,6 @@ In 2008 Victor decided to make a career out of his passion and enrolled on a Lin
 + Certified in AWS Certified Solutions Architect Associate, 2020
 + Red Hat Certified Specialist in Ansible Automation, 2019
 + Puppet Certified Professional, 2015
-+ Network+, 2004
-+ A+, 2004
++ CompTIA IT Operations Specialist – CIOS Stackable Certification, 2007
++ CompTIA Network+, 2007
++ CompTIA A+, 2006

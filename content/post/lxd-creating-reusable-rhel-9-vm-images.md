@@ -7,6 +7,8 @@ description: "Save time by creating a reusable RHEL 9 VM image with LXD."
 tags: ["Linux", "Containers", "Virtualization"]
 ---
 
+![image 0](/img/lxd-creating-reusable-rhel-9-vm-images/image-0.png)
+
 Following the LXD theme of my previous posts, today I’m going to walk you through creating a RHEL 9 VM on LXD, and then show you how to turn that VM into an image. This way, you can spin up new RHEL 9 VMs whenever you want—without having to sit through the whole install/setup process again.
 
 To follow along, you’ll need an active Red Hat subscription. If you’re doing this for personal use (like self-development, home lab tinkering, or just because you enjoy virtual machines as much as Netflix), you can [download RHEL for free](https://developers.redhat.com/products/rhel/download) when you sign up for the **Red Hat Developer Subscription for Individuals.**
